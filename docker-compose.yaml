@@ -11,6 +11,6 @@ services:
     volumes:
       - ./config:/config
     environment:
-      ATUIN_DB_URI: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      ATUIN_DB_URI: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:5432/${POSTGRES_DB}
       ATUIN_CONFIG_DIR: /config
       RUST_LOG: info,atuin_server=debug
