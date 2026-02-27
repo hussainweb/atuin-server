@@ -1,0 +1,9 @@
+# Atuin Database
+config/atuin.db
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
